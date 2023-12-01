@@ -1,0 +1,68 @@
+
+                                                                                             TABLE FOR COURSES
+
+ CREATE TABLE courses(
+  s_no INTEGER,
+  course TEXT,
+  course_id INTEGER
+  );
+
+   INSERT INTO courses
+  VALUES(1,"Full stack development",1),
+        (2,"Cyber security",2),
+        (3,"Data science",3),
+        (4,"Devops",4);
+     
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+                                                                                               TABLE FOR MENTORS
+
+ CREATE TABLE Mentor(
+  mentor_id INTEGER,
+  name TEXT,
+  course_id INTEGER,
+  batch_id INTEGER
+  );
+  insert into Mentor
+  values (1,"sanjay",1,1),
+         (2,"vishnu",2,2),
+         (3,"tamilarasan",3,3),
+         (4,"ram",4,4);
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                                                         
+                                                                                              TABLE FOR BATCHES
+
+
+ CREATE TABLE batches(
+   batch_id INTEGER,
+   name TEXT,
+   course_id INTEGER,
+   duration TEXT,
+   no_students INTEGER
+   );
+   INSERT INTO batches
+   VALUES(1,"B54WE",1,"5 MONTHS",25),
+         (2,"B54WD",2,"3 MONTHS",25),
+         (3,"B55WE",3,"5 MONTHS",25),
+         (4,"B55WD",4,"3 MONTHS",25);
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+      
+                                                                                                    TABLE FOR STUDENTS
+
+CREATE TABLE students(
+   std_id integer,
+   name text,
+   course_id INTEGER,
+   batch_id INTEGER
+ );     
+ INSERT INTO students
+ VALUES (1,"hari",1,1),
+        (2,"kannan",2,2),
+        (3,"venkat",2,2),
+        (4,"mark",4,4),
+        (5,"jeeva",3,3),
+        (6,"vicky",1,1);
